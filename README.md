@@ -51,4 +51,4 @@ RETURN DIVIDE((Last - First), First) * 100
 Created by Karthick.T
 📧 karthickt646@gmail.com
 🔗 https://github.com/Karthickanalyst
-🔗 in/karthickanalyst
+🔗 www.linkedin.com/in/karthickanalyst
