@@ -1,10 +1,10 @@
-🌍# Global-Economic-and-Demographic-Trends-Analysis-Milestone-Project
+🌍 **Global-Economic-and-Demographic-Trends-Analysis-Milestone-Project**
 
-📌 Overview
-
+📌 **Overview
+**
 This project explores global development patterns using economic, demographic, and social indicators. The analysis focuses on GDP, population trends, literacy, mortality, and migration from 1960 to 2016, using multiple datasets and interactive dashboards built in Power BI.
 
-📁 Datasets Used
+📁** Datasets Used**
 
 CountriesWorld Excel File – Combined indicators (GDP, literacy, phones, mortality, etc.)
 
@@ -14,7 +14,7 @@ PopulationPerCountry – Annual population data
 
 MetaData_Country – Country-region-income classifications
 
-⚙️ Tools & Techniques
+⚙️ **Tools & Techniques**
 
 Power BI Desktop
 
@@ -26,7 +26,7 @@ Data modeling (merging tables, relationships)
 
 Statistical trend analysis (growth %, correlations)
 
-📊 Dashboards Included
+📊 **Dashboards Included**
 
 Global Economy – GDP growth, GDP per capita trends
 
@@ -40,7 +40,7 @@ Country Profiles – Country-specific indicators
 
 Migration & Demographics – Net migration, birth/death rates
 
-🧠 Key Insights
+🧠 **Key Insights**
 
 High GDP countries show stronger literacy and digital access
 
@@ -50,7 +50,7 @@ Asia dominates population growth but with economic disparity
 
 Net migration favors high-income nations
 
-📈 Sample DAX Measures
+📈 **Sample DAX Measures**
 
 Total GDP = SUM('GDP'[Value])
 Avg Literacy = AVERAGE('CountriesWorld'[Literacy_Fixed])
@@ -59,7 +59,7 @@ Population Growth % =
     VAR Last = CALCULATE(SUM('Population'[Value]), 'Population'[Year] = 2016)
     RETURN DIVIDE((Last - First), First) * 100
 
-✅ Recommendations
+✅ **Recommendations**
 
 Prioritize education & health investments in low-literacy regions
 
@@ -77,7 +77,13 @@ README_GlobalInsights.md – This documentation
 
 📧 Contact
 
-Created by [Your Name][Your Email] | [GitHub URL] | [LinkedIn URL]
+Created by 
+Karthick.T
+karthickt646@gmail.com
+www.linkedin.com/in/karthickanalyst
+
+
+
 
 Note: This project is for academic and portfolio purposes only. Data sourced from public datasets.
 
