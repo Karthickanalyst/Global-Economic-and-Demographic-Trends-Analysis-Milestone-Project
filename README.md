@@ -40,19 +40,15 @@ Population Growth % =
 VAR First = CALCULATE(SUM('Population'[Value]), 'Population'[Year] = 1960)
 VAR Last = CALCULATE(SUM('Population'[Value]), 'Population'[Year] = 2016)
 RETURN DIVIDE((Last - First), First) * 100
-✅ Recommendations
-Strengthen education and healthcare in low-literacy regions
+```
+## Recommendations
+- Strengthen education and healthcare in low-literacy regions
+- Use GDP per capita + literacy as development indicators
+- Encourage digital access for education
+- Guide migration policies using data-backed population trends
 
-Use GDP per capita + literacy as development indicators
-
-Encourage digital access for education
-
-Guide migration policies using data-backed population trends
-
-📧 Contact
+📧 **Contact**
 Created by Karthick.T
 📧 karthickt646@gmail.com
 🔗 https://github.com/Karthickanalyst
-🔗 https://www.linkedin.com/in/karthickanalyst
-
-Note: This project is for academic and portfolio use only. Data sourced from publicly available global development datasets.
+🔗 in/karthickanalyst
