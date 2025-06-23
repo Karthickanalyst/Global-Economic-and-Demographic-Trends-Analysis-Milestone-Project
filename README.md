@@ -1,89 +1,58 @@
-🌍 **Global-Economic-and-Demographic-Trends-Analysis-Milestone-Project**
+# 🌍 Global Insights: A Changing World
 
-📌 **Overview
-**
-This project explores global development patterns using economic, demographic, and social indicators. The analysis focuses on GDP, population trends, literacy, mortality, and migration from 1960 to 2016, using multiple datasets and interactive dashboards built in Power BI.
+## 📌 Overview
+This Power BI project analyzes global economic and demographic indicators from 1960 to 2016. It includes interactive dashboards on GDP, population, literacy, mortality, and migration — offering visual storytelling through data from over 100 countries.
 
-📁** Datasets Used**
+## 📁 Datasets Used
+- **CountriesWorld.xlsx** – Combined indicators (GDP per capita, literacy, phones, birth/death rates)
+- **GDP_by_Country_1960_2016.xlsx** – Historical GDP data
+- **PopulationPerCountry.csv** – Annual population by country
+- **MetaData_Country.csv** – Region and income group classification
 
-CountriesWorld Excel File – Combined indicators (GDP, literacy, phones, mortality, etc.)
+## ⚙️ Tools & Techniques
+- **Power BI Desktop**
+- Power Query (data cleaning & transformation)
+- DAX measures (KPI calculations, growth %, YoY)
+- Data modeling with multiple joins
+- Statistical insights & pattern analysis
 
-GDP by Country (1960–2016) – Annual GDP per country
+## 📊 Dashboards Included
+1. **Global Economy** – Top GDP countries, growth trends
+2. **Population Trends** – Population growth & density
+3. **Literacy & Technology** – Literacy rate vs GDP, phones per 1000
+4. **Regional Comparison** – Region-wise literacy, GDP, and mortality
+5. **Country Profile Explorer** – KPI breakdown per country
+6. **Migration & Demographics** – Net migration, birth/death rates
 
-PopulationPerCountry – Annual population data
+## 🧠 Key Insights
+- High-income countries show higher literacy and digital access
+- Sub-Saharan Africa faces high mortality and low literacy challenges
+- Most global population growth is from lower-income countries
+- Migration patterns reflect economic disparities
 
-MetaData_Country – Country-region-income classifications
-
-⚙️ **Tools & Techniques**
-
-Power BI Desktop
-
-Power Query for data transformation
-
-DAX for calculated measures and KPIs
-
-Data modeling (merging tables, relationships)
-
-Statistical trend analysis (growth %, correlations)
-
-📊 **Dashboards Included**
-
-Global Economy – GDP growth, GDP per capita trends
-
-Population Trends – Growth over time, top & bottom countries
-
-Literacy & Technology – Literacy vs GDP, phones per 1,000
-
-Regional Comparisons – Mortality, GDP, literacy by region
-
-Country Profiles – Country-specific indicators
-
-Migration & Demographics – Net migration, birth/death rates
-
-🧠 **Key Insights**
-
-High GDP countries show stronger literacy and digital access
-
-Sub-Saharan Africa has the highest mortality and lowest literacy
-
-Asia dominates population growth but with economic disparity
-
-Net migration favors high-income nations
-
-📈 **Sample DAX Measures**
-
+## 📈 Sample DAX Measures
+```DAX
 Total GDP = SUM('GDP'[Value])
+
 Avg Literacy = AVERAGE('CountriesWorld'[Literacy_Fixed])
-Population Growth % =
-    VAR First = CALCULATE(SUM('Population'[Value]), 'Population'[Year] = 1960)
-    VAR Last = CALCULATE(SUM('Population'[Value]), 'Population'[Year] = 2016)
-    RETURN DIVIDE((Last - First), First) * 100
 
-✅ **Recommendations**
+Population Growth % = 
+VAR First = CALCULATE(SUM('Population'[Value]), 'Population'[Year] = 1960)
+VAR Last = CALCULATE(SUM('Population'[Value]), 'Population'[Year] = 2016)
+RETURN DIVIDE((Last - First), First) * 100
+✅ Recommendations
+Strengthen education and healthcare in low-literacy regions
 
-Prioritize education & health investments in low-literacy regions
+Use GDP per capita + literacy as development indicators
 
-Encourage tech access to boost digital literacy
+Encourage digital access for education
 
-Use GDP per capita alongside population trends for policy design
-
-📂 Files in This Repo
-
-GlobalInsights.pbix – Power BI report file
-
-Data/ – Folder containing raw data sources (CSV, Excel)
-
-README_GlobalInsights.md – This documentation
+Guide migration policies using data-backed population trends
 
 📧 Contact
+Created by Karthick.T
+📧 karthickt646@gmail.com
+🔗 https://github.com/Karthickanalyst
+🔗 https://www.linkedin.com/in/karthickanalyst
 
-Created by 
-Karthick.T
-karthickt646@gmail.com
-www.linkedin.com/in/karthickanalyst
-
-
-
-
-Note: This project is for academic and portfolio purposes only. Data sourced from public datasets.
-
+Note: This project is for academic and portfolio use only. Data sourced from publicly available global development datasets.
